@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainerUpper{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.mainContainerUpperLower,.mainContainerUpperMiddle,.mainContainerUpperUpper{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainerUpperMiddle{
+    align-items: flex-end;
+}
+.mainContainerUpperLower{
+    align-items: flex-start;
+}
+.mainContainerMiddle{
+    width: 100%;
+    height: 35%;
+}
+.mainContainerMiddleUpper,.mainContainerMiddleLower{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainerMiddleUpperDiv{
+    width: 450px;
+    height: 35%;
+    display: flex;
+}
+.mainContainerMiddleUpperDivLeft{
+    width: 90%;
+    height: 100%;
+}
+.mainContainerMiddleUpperDivRight{
+    width:10%;
+    height: 100%;
+    background-color: #d65108;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+.notFound{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    
+}
+.search{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    border:2px solid #d65108;
+    padding-left: 1rem;
+    outline: none;
+}
+.fa{
+    color: white;
+    
+}
+.mainContainerLower{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.card{
+    width: 20%;
+    height: 400px;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-left: 2px;
+    box-shadow: 0px 0px 12px;
+}
+.cardUpper{
+    width: 100%;
+    height: 60%;
+    
+}
+.cardLower{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+.button{
+    width: 60%;
+    height: 30%;
+    border: none;
+    border-radius: 50px;
+    background-color: #d65108;
+    color: white;
+}
+.temp{
+    position: absolute;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recipeCard{
+    width: 500px;
+    height: 500px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d65108;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px;
+}
+
+.cross,.recipeCardName,.recipeCardInput,.recipeCardInstruction,.recipeCardpPara,.recipeCardImg,.recipeCardVideo{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+.cross{
+    justify-content: flex-end;
+}
+.fa-times{
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.cross button{
+    border: 2px solid green;
+    border-radius: 50%;
+    border: none;
+}
+img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.recipeCardImg img{
+   border-radius: 50%;
+}
+.recipeCardInput{
+    width: fit-content;
+    background-color: white;
+    color: #d65108;
+    border-radius: 10px;
+}
+.recipeCardPara{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media only screen and (max-width:1080px) and (min-width:768px){
+
+    .card{
+        width: 45%;
+    }
+}
+@media only screen and (max-width:767px){
+    .card{
+        width: 80%;
+    }
+    .recipeCard{
+        width: 300px;
+    }
+}
